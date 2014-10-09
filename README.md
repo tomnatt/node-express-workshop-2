@@ -21,6 +21,8 @@ Then run ```express -e``` (flag changes the templating language)
 * https://github.com/clusterapp/api - example app written by Jack
 * http://mongoosejs.com/
 * https://github.com/visionmedia/supertest
+* https://github.com/joyent/node/wiki/ES6-(a.k.a.-Harmony)-Features-Implemented-in-V8-and-Available-in-Node
+* http://javascriptplayground.com/blog/2014/10/es6-introduction/
 
 ## Bigger frameworks
 
