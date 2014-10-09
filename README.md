@@ -23,6 +23,7 @@ Then run ```express -e``` (flag changes the templating language)
 * https://github.com/visionmedia/supertest
 * https://github.com/joyent/node/wiki/ES6-(a.k.a.-Harmony)-Features-Implemented-in-V8-and-Available-in-Node
 * http://javascriptplayground.com/blog/2014/10/es6-introduction/
+* http://jlongster.com/A-Study-on-Solving-Callbacks-with-JavaScript-Generators
 
 ## Bigger frameworks
 
