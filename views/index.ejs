@@ -12,7 +12,7 @@
 
     <ul>
     <% posts.forEach(function(post) { %>
-      <li><%= post.title %></li>
+      <li><a href="/posts/<%= post._id %>"><%= post.title %></a></li>
     <% }); %>
     </ul>
   </body>
