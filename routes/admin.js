@@ -11,7 +11,39 @@ router.use(function(req, res, next) {
 })
 
 router.get('/', function(req, res) {
-  res.render('admin');
+  res.render('admin', { errors : [] });
+});
+
+router.post('/new', function(req, res) {
+  var title = req.body.title;
+  var content = req.body.content;
+
+  var errors = [];
+  if (!title) errors.push('NO TITLE');
+  if (!content) errors.push('NO CONTENT');
+
+  if (errors.length > 0) {
+    res.render('admin', { errors: errors });
+    return;
+  }
+
+  // title and content are defined
+  conn(function(db, doneCb) {
+
+    var collection = db.collection('posts');
+
+    collection.insert({
+      title: title,
+      content: content
+    }, function(err, post) {
+
+      err = err ? [err] : [];
+      res.render('admin', { errors: err });
+      doneCb();
+
+    })
+
+  });
 });
 
 module.exports = router;
