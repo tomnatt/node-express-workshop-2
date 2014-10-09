@@ -12,7 +12,10 @@ router.get('/', function(req, res) {
         // do something!
       } else {
         console.log(posts);
-        res.render('index', { title: 'Express' });
+        res.render('index', {
+            title: 'Express',
+            posts: posts
+          });
         doneCb();
       }
     });
