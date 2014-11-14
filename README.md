@@ -9,6 +9,11 @@ Install the generator: ```npm install -g express-generator```
 
 Then run ```express -e``` (flag changes the templating language)
 
+To run this example:
+
+* ```npm install```
+* ```npm start```
+
 ## Interesting links
 
 * https://www.npmjs.org/doc/misc/semver.html
